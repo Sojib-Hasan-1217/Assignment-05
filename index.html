@@ -32,7 +32,7 @@
             <!-- nav right div -->
             <div class="flex mt-4 justify-around lg:flex-row w-[400px] h-[50px]  gap-4">
                 <div class="flex  items-center  gap-[10px] rounded-3xl bg-green-50 px-8 py-3">
-                    <p class="font-bold">0</p>
+                    <p class="font-bold" id="heart-count">0</p>
                     <img class="w-[30px]" src="./assets/heart.png" alt="">
                 </div>
                 <div class="flex  items-center  gap-[10px] rounded-3xl bg-green-50 px-8 py-3">
@@ -71,7 +71,7 @@
                 <div class=" bg-white shadow-lg rounded-xl">
                     <div class="flex justify-between items-center px-4 pt-4">
                         <img class="w-[50px]" src="./assets/emergency.png" alt="">
-                        <span><i class="fa-regular fa-heart text-xl"></i></span>
+                        <span onclick="heartcount()"><i class="fa-regular fa-heart text-xl"></i></span>
                     </div>
                     <div class="px-4 pt-3">
                         <h1 class="text-xl font-bold">National Emergency Number</h1>
@@ -80,9 +80,9 @@
                         <p class="bg-gray-200 inline-block px-3 py-1 rounded-2xl">All</p>
                     </div>
                     <div class="flex justify-between mt-3 px-4 pb-4">
-                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md"><i
+                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md hover:bg-black hover:text-white"><i
                                 class="fa-regular fa-copy text-base"></i> Copy</button>
-                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md"><span><i
+                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md hover:bg-green-900"><span><i
                                     class="fa-solid fa-phone text-base"></i></span> Call</button>
                     </div>
                 </div> 
@@ -90,7 +90,7 @@
                 <div class=" bg-white shadow-lg rounded-xl">
                     <div class="flex justify-between items-center px-4 pt-4">
                         <img class="w-[50px]" src="./assets/police.png" alt="">
-                        <span><i class="fa-regular fa-heart text-xl"></i></span>
+                        <span onclick="heartcount()"><i class="fa-regular fa-heart text-xl"></i></span>
                     </div>
                     <div class="px-4 pt-3">
                         <h1 class="text-xl font-bold">Police Helpline Number</h1>
@@ -99,9 +99,9 @@
                         <p class="bg-gray-200 inline-block px-3 py-1 rounded-2xl">Police</p>
                     </div>
                     <div class="flex justify-between mt-3 px-4 pb-4">
-                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md"><i
+                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md hover:bg-black hover:text-white"><i
                                 class="fa-regular fa-copy text-base"></i> Copy</button>
-                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md"><span><i
+                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md hover:bg-green-900"><span><i
                                     class="fa-solid fa-phone text-base"></i></span> Call</button>
                     </div>
                 </div> 
@@ -109,7 +109,7 @@
                 <div class=" bg-white shadow-lg rounded-xl">
                     <div class="flex justify-between items-center px-4 pt-4">
                         <img class="w-[50px]" src="./assets/fire-service.png" alt="">
-                        <span><i class="fa-regular fa-heart text-xl"></i></span>
+                        <span onclick="heartcount()"><i class="fa-regular fa-heart text-xl"></i></span>
                     </div>
                     <div class="px-4 pt-3">
                         <h1 class="text-xl font-bold">Fire Service Number</h1>
@@ -118,9 +118,9 @@
                         <p class="bg-gray-200 inline-block px-3 py-1 rounded-2xl">Fire</p>
                     </div>
                     <div class="flex justify-between mt-3 px-4 pb-4">
-                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md"><i
+                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md hover:bg-black hover:text-white"><i
                                 class="fa-regular fa-copy text-base"></i> Copy</button>
-                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md"><span><i
+                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md hover:bg-green-900"><span><i
                                     class="fa-solid fa-phone text-base"></i></span> Call</button>
                     </div>
                 </div> 
@@ -128,7 +128,7 @@
                 <div class=" bg-white shadow-lg rounded-xl">
                     <div class="flex justify-between items-center px-4 pt-4">
                         <img class="w-[50px]" src="./assets/ambulance.png" alt="">
-                        <span><i class="fa-regular fa-heart text-xl"></i></span>
+                        <span onclick="heartcount()"><i class="fa-regular fa-heart text-xl"></i></span>
                     </div>
                     <div class="px-4 pt-3">
                         <h1 class="text-xl font-bold">Ambulance Service</h1>
@@ -137,9 +137,9 @@
                         <p class="bg-gray-200 inline-block px-3 py-1 rounded-2xl">Health</p>
                     </div>
                     <div class="flex justify-between mt-3 px-4 pb-4">
-                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md"><i
+                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md hover:bg-black hover:text-white"><i
                                 class="fa-regular fa-copy text-base"></i> Copy</button>
-                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md"><span><i
+                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md hover:bg-green-900"><span><i
                                     class="fa-solid fa-phone text-base"></i></span> Call</button>
                     </div>
                 </div> 
@@ -147,7 +147,7 @@
                 <div class=" bg-white shadow-lg rounded-xl">
                     <div class="flex justify-between items-center px-4 pt-4">
                         <img class="w-[50px]" src="./assets/emergency.png" alt="">
-                        <span><i class="fa-regular fa-heart text-xl"></i></span>
+                        <span onclick="heartcount()"><i class="fa-regular fa-heart text-xl"></i></span>
                     </div>
                     <div class="px-4 pt-3">
                         <h1 class="text-xl font-bold">Women & Child Helpline</h1>
@@ -156,9 +156,9 @@
                         <p class="bg-gray-200 inline-block px-3 py-1 rounded-2xl">Help</p>
                     </div>
                     <div class="flex justify-between mt-3 px-4 pb-4">
-                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md"><i
+                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md hover:bg-black hover:text-white"><i
                                 class="fa-regular fa-copy text-base"></i> Copy</button>
-                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md"><span><i
+                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md hover:bg-green-900"><span><i
                                     class="fa-solid fa-phone text-base"></i></span> Call</button>
                     </div>
                 </div> 
@@ -166,7 +166,7 @@
                 <div class=" bg-white shadow-lg rounded-xl">
                     <div class="flex justify-between items-center px-4 pt-4">
                         <img class="w-[50px]" src="./assets/emergency.png" alt="">
-                        <span><i class="fa-regular fa-heart text-xl"></i></span>
+                        <span onclick="heartcount()"><i class="fa-regular fa-heart text-xl"></i></span>
                     </div>
                     <div class="px-4 pt-3">
                         <h1 class="text-xl font-bold">Anti-Corruption Helpline</h1>
@@ -175,9 +175,9 @@
                         <p class="bg-gray-200 inline-block px-3 py-1 rounded-2xl">Govt.</p>
                     </div>
                     <div class="flex justify-between mt-3 px-4 pb-4">
-                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md"><i
+                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md hover:bg-black hover:text-white"><i
                                 class="fa-regular fa-copy text-base"></i> Copy</button>
-                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md"><span><i
+                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md hover:bg-green-900"><span><i
                                     class="fa-solid fa-phone text-base"></i></span> Call</button>
                     </div>
                 </div> 
@@ -185,7 +185,7 @@
                 <div class=" bg-white shadow-lg rounded-xl">
                     <div class="flex justify-between items-center px-4 pt-4">
                         <img class="w-[50px]" src="./assets/emergency.png" alt="">
-                        <span><i class="fa-regular fa-heart text-xl"></i></span>
+                        <span onclick="heartcount()"><i class="fa-regular fa-heart text-xl"></i></span>
                     </div>
                     <div class="px-4 pt-3">
                         <h1 class="text-xl font-bold">Electricity Helpline</h1>
@@ -194,9 +194,9 @@
                         <p class="bg-gray-200 inline-block px-3 py-1 rounded-2xl">Electricity</p>
                     </div>
                     <div class="flex justify-between mt-3 px-4 pb-4">
-                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md"><i
+                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md hover:bg-black hover:text-white"><i
                                 class="fa-regular fa-copy text-base"></i> Copy</button>
-                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md"><span><i
+                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md hover:bg-green-900"><span><i
                                     class="fa-solid fa-phone text-base"></i></span> Call</button>
                     </div>
                 </div> 
@@ -204,7 +204,7 @@
                 <div class=" bg-white shadow-lg rounded-xl">
                     <div class="flex justify-between items-center px-4 pt-4">
                         <img class="w-[50px]" src="./assets/brac.png" alt="">
-                        <span><i class="fa-regular fa-heart text-xl"></i></span>
+                        <span onclick="heartcount()"><i class="fa-regular fa-heart text-xl"></i></span>
                     </div>
                     <div class="px-4 pt-3">
                         <h1 class="text-xl font-bold">Brac Helpline</h1>
@@ -213,9 +213,9 @@
                         <p class="bg-gray-200 inline-block px-3 py-1 rounded-2xl">NGO</p>
                     </div>
                     <div class="flex justify-between mt-3 px-4 pb-4">
-                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md"><i
+                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md hover:bg-black hover:text-white"><i
                                 class="fa-regular fa-copy text-base"></i> Copy</button>
-                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md"><span><i
+                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md hover:bg-green-900"><span><i
                                     class="fa-solid fa-phone text-base"></i></span> Call</button>
                     </div>
                 </div> 
@@ -223,7 +223,7 @@
                 <div class=" bg-white shadow-lg rounded-xl">
                     <div class="flex justify-between items-center px-4 pt-4">
                         <img class="w-[50px]" src="./assets/Bangladesh-Railway.png" alt="">
-                        <span><i class="fa-regular fa-heart text-xl"></i></span>
+                        <span onclick="heartcount()"><i class="fa-regular fa-heart text-xl"></i></span>
                     </div>
                     <div class="px-4 pt-3">
                         <h1 class="text-xl font-bold">Bangladesh Railway Helpline </h1>
@@ -232,9 +232,9 @@
                         <p class="bg-gray-200 inline-block px-3 py-1 rounded-2xl">Travel</p>
                     </div>
                     <div class="flex justify-between mt-3 px-4 pb-4">
-                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md"><i
+                        <button class="border-1 border-gray-400 px-12 py-2 text-lg rounded-md hover:bg-black hover:text-white"><i
                                 class="fa-regular fa-copy text-base"></i> Copy</button>
-                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md"><span><i
+                        <button class="bg-[#00a63e] text-lg text-white px-12 py-2 rounded-md hover:bg-green-900"><span><i
                                     class="fa-solid fa-phone text-base"></i></span> Call</button>
                     </div>
                 </div> 
@@ -244,9 +244,9 @@
 
             <!-- History section -->
             <section class="bg-white w-full lg:w-1/5">
-                <div class="flex justify-between items-center px-4 pt-4">
+                <div class="flex justify-between items-center px-2 pt-4">
                     <p class="text-lg font-semibold"><i class="fa-regular fa-clock text-base"></i> Call History</p>
-                    <button class="rounded-3xl bg-[#00A63E] px-8 py-3 text-white">Clear</button>
+                    <button class="rounded-3xl bg-[#00A63E] px-8 py-3 text-white hover:bg-red-600">Clear</button>
 
                 </div>
                 <!-- history container -->
@@ -256,7 +256,9 @@
 
             </section>
         </div>
+  
 
+        
     </main>
 
 
