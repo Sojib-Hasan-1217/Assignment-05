@@ -36,12 +36,12 @@ document.getElementById('call-btn-1').addEventListener('click', function (event)
   const remainingTotalCoin = totalCoin - callPrice;
 
   if (remainingTotalCoin < 0) {
-    alert('you do not enough coin to make a call')
+    alert("You Don't Have Enough Coin! To Make A Call You need Atlest 20 Coin")
     return
   }
   document.getElementById('coin-field').innerText = remainingTotalCoin;
 
-  alert(`calling ${serviceName} 
+  alert(`Calling ${serviceName} 
           ${serviceNumber}`)
 
   // for transaction container
@@ -86,12 +86,12 @@ document.getElementById('call-btn-2').addEventListener('click', function (event)
   const remainingTotalCoin = totalCoin - callPrice;
 
   if (remainingTotalCoin < 0) {
-    alert('you do not enough coin to make a call')
+    alert("You Don't Have Enough Coin! To Make A Call You need Atlest 20 Coin")
     return
   }
   document.getElementById('coin-field').innerText = remainingTotalCoin;
 
-  alert(`calling ${serviceName} 
+  alert(`Calling ${serviceName} 
           ${serviceNumber}`)
 
 
@@ -132,12 +132,12 @@ document.getElementById('call-btn-3').addEventListener('click', function (event)
   const remainingTotalCoin = totalCoin - callPrice;
 
   if (remainingTotalCoin < 0) {
-    alert('you do not enough coin to make a call')
+    alert("You Don't Have Enough Coin! To Make A Call You need Atlest 20 Coin")
     return
   }
   document.getElementById('coin-field').innerText = remainingTotalCoin;
 
-  alert(`calling ${serviceName} 
+  alert(`Calling ${serviceName} 
           ${serviceNumber}`)
 
   // for transaction container
@@ -179,12 +179,12 @@ document.getElementById('call-btn-4').addEventListener('click', function (event)
   const remainingTotalCoin = totalCoin - callPrice;
 
   if (remainingTotalCoin < 0) {
-    alert('you do not enough coin to make a call')
+    alert("You Don't Have Enough Coin! To Make A Call You need Atlest 20 Coin")
     return
   }
   document.getElementById('coin-field').innerText = remainingTotalCoin;
 
-  alert(`calling ${serviceName} 
+  alert(`Calling ${serviceName} 
           ${serviceNumber}`)
   // for transaction container
   const data = {
@@ -225,12 +225,12 @@ document.getElementById('call-btn-5').addEventListener('click', function (event)
   const remainingTotalCoin = totalCoin - callPrice;
 
   if (remainingTotalCoin < 0) {
-    alert('you do not enough coin to make a call')
+    alert("You Don't Have Enough Coin! To Make A Call You need Atlest 20 Coin")
     return
   }
   document.getElementById('coin-field').innerText = remainingTotalCoin;
 
-  alert(`calling ${serviceName} 
+  alert(`Calling ${serviceName} 
           ${serviceNumber}`)
   // for transaction container
   const data = {
@@ -271,12 +271,12 @@ document.getElementById('call-btn-6').addEventListener('click', function (event)
   const remainingTotalCoin = totalCoin - callPrice;
 
   if (remainingTotalCoin < 0) {
-    alert('you do not enough coin to make a call')
+    alert("You Don't Have Enough Coin! To Make A Call You need Atlest 20 Coin")
     return
   }
   document.getElementById('coin-field').innerText = remainingTotalCoin;
 
-  alert(`calling ${serviceName} 
+  alert(`Calling ${serviceName} 
           ${serviceNumber}`)
 
   // for transaction container
@@ -316,12 +316,12 @@ document.getElementById('call-btn-7').addEventListener('click', function (event)
   const remainingTotalCoin = totalCoin - callPrice;
 
   if (remainingTotalCoin < 0) {
-    alert('you do not enough coin to make a call')
+    alert("You Don't Have Enough Coin! To Make A Call You need Atlest 20 Coin")
     return
   }
   document.getElementById('coin-field').innerText = remainingTotalCoin;
 
-  alert(`calling ${serviceName} 
+  alert(`Calling ${serviceName} 
           ${serviceNumber}`)
 
   // for transaction container
@@ -361,12 +361,12 @@ document.getElementById('call-btn-8').addEventListener('click', function (event)
   const remainingTotalCoin = totalCoin - callPrice;
 
   if (remainingTotalCoin < 0) {
-    alert('you do not enough coin to make a call')
+    alert("You Don't Have Enough Coin! To Make A Call You need Atlest 20 Coin")
     return
   }
   document.getElementById('coin-field').innerText = remainingTotalCoin;
 
-  alert(`calling ${serviceName} 
+  alert(`Calling ${serviceName} 
           ${serviceNumber}`)
 
   // for transaction container
@@ -407,12 +407,12 @@ document.getElementById('call-btn-9').addEventListener('click', function (event)
   const remainingTotalCoin = totalCoin - callPrice;
 
   if (remainingTotalCoin < 0) {
-    alert('you do not enough coin to make a call')
+    alert("You Don't Have Enough Coin! To Make A Call You need Atlest 20 Coin")
     return
   }
   document.getElementById('coin-field').innerText = remainingTotalCoin;
 
-  alert(`calling ${serviceName} 
+  alert(`Calling ${serviceName} 
           ${serviceNumber}`)
 
   // for transaction container
